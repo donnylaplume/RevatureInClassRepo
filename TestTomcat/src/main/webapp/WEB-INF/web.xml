@@ -7,17 +7,9 @@
   <servlet>
   	<servlet-name>Todo Servlet</servlet-name>
   	<servlet-class>com.revature.ServletsTutorial.TodoServlets</servlet-class>
-  	<init-param>
-  		<param-name>days</param-name>
-  		<param-value>7</param-value>
-  	</init-param>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Todo Servlet</servlet-name>
   	<url-pattern>/api</url-pattern>
   </servlet-mapping>
-  <context-param>
-  	<param-name>Age</param-name>
-  	<param-value>24</param-value>
-  </context-param>
 </web-app>
