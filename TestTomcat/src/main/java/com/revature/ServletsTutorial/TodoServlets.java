@@ -49,10 +49,6 @@ public class TodoServlets extends HttpServlet {
     	
     	try {
     		newTodo = new ObjectMapper().readValue(req.getReader(), Todo.class);
-    	}catch(JsonParseException | JsonMappingException e)
-    	{
-    		res.sendError(400, "InvalidJSON for Todo sent to server");
-    		return;
     	}
     	catch(IOException e)
     	{
